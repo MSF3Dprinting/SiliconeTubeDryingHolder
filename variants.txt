@@ -1,0 +1,2 @@
+holder | part="holder" | x2
+test_slot | part="test_slot"

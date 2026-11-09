@@ -1,0 +1,7 @@
+=== export 2026-09-27T01:04:01Z  tube_holder v2.0
+openscad: input .scad file missing
+ok    holder  tube_holder_holder_v2.0.stl  [part="holder"]
+      2 copies: tube_holder_holder_1..2_v2.0.stl
+ok    test_slot  tube_holder_test_slot_v2.0.stl  [part="test_slot"]
+=== done, exit 0  (exporter: /home/claude/tube_holder/tools/openscad-fast)
+exporter: OpenSCAD 2025.07.18 (openscad-wasm 0.0.4, Manifold backend) via tools/openscad-fast (+ tools/stl_clean.py: drops zero-area specks); language level 2021.01

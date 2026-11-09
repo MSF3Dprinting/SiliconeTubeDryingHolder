@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# openscad-fast — OpenSCAD 2025.07 with the Manifold engine (npm openscad-wasm), same arguments as `openscad`
+# for geometry export (-o out.stl -D ... file.scad). PNG export is not possible here: use `openscad` (native).
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+node "$HERE/openscad_manifold.mjs" "$@" || exit $?
+# Post-step: drop zero-area degenerate specks Manifold can leave at tangent run/arc overlaps (see tools/stl_clean.py)
+for ((i = 1; i < $#; i++)); do
+    if [[ "${!i}" == "-o" ]]; then j=$((i + 1)); out="${!j}"; [[ "$out" == *.stl ]] && python3 "$HERE/stl_clean.py" "$out"; fi
+done
+exit 0

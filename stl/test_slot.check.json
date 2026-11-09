@@ -1,0 +1,80 @@
+[
+  {
+    "file": "/home/claude/tube_holder/stl/tube_holder_test_slot_v2.0.stl",
+    "fail": [],
+    "warn": [
+      "section at Z = 30.0: 2 separate pieces \u2014 expected if the part has several legs or walls here, a defect if the zone should be one piece",
+      "section at Z = 50.0: 2 separate pieces \u2014 expected if the part has several legs or walls here, a defect if the zone should be one piece"
+    ],
+    "triangles": 24240,
+    "size": [
+      60.0,
+      36.0,
+      59.88
+    ],
+    "min_z": 0.0,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume": 50940.04,
+    "bodies": 1,
+    "bed_contact_area": 2056.8,
+    "footprint_area": 2129.0,
+    "bed_contact_pct": 96.6,
+    "worst_overhang_deg": 45.0,
+    "worst_overhang_at": [
+      59.7,
+      22.0,
+      0.1
+    ],
+    "overhang_facets_over_limit": 0,
+    "overhang_area_over_limit": 0.0,
+    "bridges": [],
+    "sections": [
+      {
+        "z": 3.0,
+        "pieces": 1,
+        "area": 2129.02,
+        "min_wall": 20.05,
+        "min_wall_at": [
+          -30.01,
+          -12.26
+        ],
+        "wall_ok": true
+      },
+      {
+        "z": 10.0,
+        "pieces": 1,
+        "area": 833.71,
+        "min_wall": 18.75,
+        "min_wall_at": [
+          -20.65,
+          -9.35
+        ],
+        "wall_ok": true
+      },
+      {
+        "z": 30.0,
+        "pieces": 2,
+        "area": 689.43,
+        "min_wall": 16.15,
+        "min_wall_at": [
+          -4.48,
+          9.03
+        ],
+        "wall_ok": true
+      },
+      {
+        "z": 50.0,
+        "pieces": 2,
+        "area": 624.23,
+        "min_wall": 9.65,
+        "min_wall_at": [
+          -4.65,
+          -7.85
+        ],
+        "wall_ok": true
+      }
+    ],
+    "ok": true
+  }
+]
